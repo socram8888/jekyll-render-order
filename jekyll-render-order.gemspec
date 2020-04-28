@@ -16,6 +16,7 @@ Gem::Specification.new do |spec|
 	spec.test_files    = `git ls-files -- test`.split('\n')
 
 	spec.add_dependency 'jekyll', '>= 3.0', '<5.0'
-	spec.add_development_dependency 'minitest', '~> 5.14'
+	spec.add_development_dependency 'rake'
+	spec.add_development_dependency 'minitest'
 	spec.add_development_dependency 'bundler'
 end
