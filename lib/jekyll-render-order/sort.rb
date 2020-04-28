@@ -3,12 +3,15 @@
 module Jekyll
 	module RenderOrder
 		DEFAULT_ORDER = [
-			'assets/**'
+			'assets/**/*.css',
+			'assets/**/*.js',
+			'*.css',
+			'*.js',
 		].freeze()
 
 		def self.sort(site)
 			site.pages.sort! { |a, b|
-				render_order = site.config.fetch('render_order', DEFAULT_ORDER)
+				render_order = site.config['render_order'] || DEFAULT_ORDER
 
 				a_idx = render_order.index { |x| File.fnmatch?(x, a.path) }
 				b_idx = render_order.index { |x| File.fnmatch?(x, b.path) }

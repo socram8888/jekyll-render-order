@@ -28,6 +28,7 @@
 .jshintrc text
 Dockerfile text
 Gemfile text
+Rakefile text
 
 # Images
 *.bmp binary
