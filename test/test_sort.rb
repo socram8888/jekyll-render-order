@@ -10,13 +10,13 @@ class SortTest < Minitest::Test
 
 		correct = [
 			# First CSS in assets
-			'assets/first/b.css',
+			'assets/first/b.scss',
 			'assets/second/a.css',
 			# Then JS files in assets
 			'assets/first/a.js',
 			'assets/second/b.js',
 			# CSS files elsewhere
-			'page/style.css',
+			'page/style.scss',
 			# JS files elsewhere
 			'first.js',
 			'page/script.js',

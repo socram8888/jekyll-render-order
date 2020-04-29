@@ -14,6 +14,7 @@ Gem::Specification.new do |spec|
 
 	spec.files         = `git ls-files -- lib`.split('\n')
 	spec.test_files    = `git ls-files -- test`.split('\n')
+	spec.require_paths = ['lib']
 
 	spec.add_dependency 'jekyll', '>= 3.0', '<5.0'
 	spec.add_development_dependency 'rake'
